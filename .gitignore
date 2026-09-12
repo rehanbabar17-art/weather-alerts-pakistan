@@ -1,3 +1,4 @@
 __pycache__/
 last_state.json
 INITIAL_FORECAST_*.txt
+locations/config.local.py

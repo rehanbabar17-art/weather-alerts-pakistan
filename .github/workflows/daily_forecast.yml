@@ -30,6 +30,7 @@ jobs:
       - name: Fetch forecast and send alerts
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          LOCATIONS_JSON: ${{ secrets.LOCATIONS_JSON }}
         run: python weather_fetcher.py
 
       - name: Save state
